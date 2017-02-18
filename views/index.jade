@@ -1,0 +1,24 @@
+extends layout
+
+block content
+ div(class='container')
+  div(class='row')
+   div(class='col-md-12')
+    h1= title
+    p Welcome to #{title}
+  form(action='#', class='form')
+   div(class='row')
+    div(class='form-group col-md-12')
+     label(class='control-label') Username
+     input#username(type="text", name="message", placeholder="Type message", class="form-control", value='Anonymous')
+   div(class='row')
+    div(class='form-group col-md-12')
+     input#msg(type="text", name="message", placeholder="Type message", class="form-control")
+   div(class='row')
+    div(class='form-group col-md-12')
+     input(type='submit', class='btn btn-primary')
+  div(class='row')
+   div(class='col-md-12')
+    div(class='panel panel-default')
+     div(class='panel-body')
+      ul#chat(class='list-unstyled')
