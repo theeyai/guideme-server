@@ -29,14 +29,14 @@ io.on('connection', function(socket){
   socket.on('chat message', function(msg){
     socket.emit('chat message', {
         Name: "Jane Doe",
-        ProfileImage: "https://s3-ap-southeast-1.amazonaws.com/guide-me/fuji.jpg?X-Amz-Date=20170218T132844Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=070d15d52b622dee6f1311090a81277b5ba84da1a43d15afb54fa8fabb273aa3&X-Amz-Credential=ASIAIF232RO4SHS7EKSA/20170218/ap-southeast-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzEF8aDPtBqC514VIkTZMiziL6ASrvcoajJyfu0o9Ktg7Hm34iK6lIpKkHJzAQ3Dw6vVc2Xme46tuMcebTfYAGnVJnQIxaNdsrmKMMgtkbwTBFJLqUZN6XG3Qe6/uTo77L7XL9b2RuWRo2glhtdLna1PDhSyUsplg7gFOjfDZf69Tiz3xVMKUdPMLCc5/Cnd7bDfV9KBDvwE873V2IZNAyHN2dvjWr/VKeDNV/OvK%2BWUr0ShIGm/sxUDFlZuacCXz/JqtJ1FZEmwwaOPsNF7oE3yNk3M029%2BzR9Kk0mtLqYTjsG3jmzm2gwt90O3FWky6JH18pOtC9JsfdKLo7gL4rM8X%2BJR/tFMdSRgbZ3qgo7JWhxQU%3D",
+        ProfileImage: "https://s3-ap-southeast-1.amazonaws.com/guide-me/fuji.jpg",
         Stars: 4.5,
         Message: "Fuji Silom Complex."
     });
     setTimeout(function() {
       socket.emit('chat message', {
           "Name": "Jay Doe",
-          "ProfileImage": "https://s3-ap-southeast-1.amazonaws.com/guide-me/silom-complex.jpg?X-Amz-Date=20170218T132914Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=e474410a1bf8f43099de6aaf785150f6dc6430f9943559e80854c959dfee9a5b&X-Amz-Credential=ASIAIF232RO4SHS7EKSA/20170218/ap-southeast-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzEF8aDPtBqC514VIkTZMiziL6ASrvcoajJyfu0o9Ktg7Hm34iK6lIpKkHJzAQ3Dw6vVc2Xme46tuMcebTfYAGnVJnQIxaNdsrmKMMgtkbwTBFJLqUZN6XG3Qe6/uTo77L7XL9b2RuWRo2glhtdLna1PDhSyUsplg7gFOjfDZf69Tiz3xVMKUdPMLCc5/Cnd7bDfV9KBDvwE873V2IZNAyHN2dvjWr/VKeDNV/OvK%2BWUr0ShIGm/sxUDFlZuacCXz/JqtJ1FZEmwwaOPsNF7oE3yNk3M029%2BzR9Kk0mtLqYTjsG3jmzm2gwt90O3FWky6JH18pOtC9JsfdKLo7gL4rM8X%2BJR/tFMdSRgbZ3qgo7JWhxQU%3D",
+          "ProfileImage": "https://s3-ap-southeast-1.amazonaws.com/guide-me/silom-complex.jpg",
           "Stars": 4.0,
           "Message": "Silom Complex."
       });
@@ -44,7 +44,7 @@ io.on('connection', function(socket){
     setTimeout(function() {
       socket.emit('chat message', {
           "Name": "Jonhn Doe",
-          "ProfileImage": "https://s3-ap-southeast-1.amazonaws.com/guide-me/sizzler.jpg?X-Amz-Date=20170218T132946Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=08fa3e62aef46f1982f6e9a31256d1aae7da6782cca07ff645955ce6abacc417&X-Amz-Credential=ASIAIF232RO4SHS7EKSA/20170218/ap-southeast-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzEF8aDPtBqC514VIkTZMiziL6ASrvcoajJyfu0o9Ktg7Hm34iK6lIpKkHJzAQ3Dw6vVc2Xme46tuMcebTfYAGnVJnQIxaNdsrmKMMgtkbwTBFJLqUZN6XG3Qe6/uTo77L7XL9b2RuWRo2glhtdLna1PDhSyUsplg7gFOjfDZf69Tiz3xVMKUdPMLCc5/Cnd7bDfV9KBDvwE873V2IZNAyHN2dvjWr/VKeDNV/OvK%2BWUr0ShIGm/sxUDFlZuacCXz/JqtJ1FZEmwwaOPsNF7oE3yNk3M029%2BzR9Kk0mtLqYTjsG3jmzm2gwt90O3FWky6JH18pOtC9JsfdKLo7gL4rM8X%2BJR/tFMdSRgbZ3qgo7JWhxQU%3D",
+          "ProfileImage": "https://s3-ap-southeast-1.amazonaws.com/guide-me/sizzler.jpg",
           "Stars": 3,
           "Message": "Sizzler CP Tower."
       });
